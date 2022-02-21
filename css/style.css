@@ -1,0 +1,373 @@
+/* &display=swap */
+@import "null.css";
+
+@font-face {
+	font-family: "Russo One";
+	src: url("../fonts/RussoOne-Regular.woff2") format("woff2"), url("../fonts/RussoOne-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* ================================================================ */
+.wrapper {
+	min-height: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+	background: #fff;
+	overflow: hidden;
+	padding-top: 30px;
+	padding: 30px 20px 30px 20px;
+}
+/* ================================================================ */
+
+body {
+	background: url("../img/foliage.jpg");
+	font-family: "Arial", serif;
+}
+
+.example {
+	padding: 30px;
+	background-color: #77608d;
+}
+
+.content {
+}
+
+h1 {
+	font-family: "Arial", sans-serif;
+	font-size: 30px;
+	line-height: 50px;
+	text-align: center;
+	display: inline-block;
+}
+
+.tac {
+	text-align: left;
+}
+
+h1:hover {
+}
+
+h1::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: rgb(50, 246, 83);
+	display: inline-block;
+}
+
+h1:hover::before {
+	width: 100px;
+	height: 20px;
+	background: rgb(50, 246, 83);
+	display: inline-block;
+}
+
+/* h1:hover::after {
+	width: 100%;
+} */
+
+h2 {
+	font-family: "Russo One", sans-serif;
+	font-size: 20px;
+	margin-bottom: 20px;
+	display: inline-block;
+	border: 2px solid #77608d;
+	border-radius: 5px;
+	box-shadow: 0 0 5px 3px #77608d;
+	padding: 3px 10px;
+}
+
+.inner-box {
+	padding: 0 0 0 20px;
+	margin-bottom: 60px;
+}
+
+.inner-box-hover li {
+	margin-bottom: 10px;
+}
+
+.border-box {
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+.border-box {
+	margin-bottom: 30px;
+}
+
+a {
+	font-family: "Arial", serif;
+	font-size: 16px;
+}
+
+.a1:hover {
+	text-decoration: underline;
+}
+
+.a1:active {
+	font-style: italic;
+}
+
+.a1:visited {
+	color: rgb(12, 148, 153);
+}
+
+.a1:focus {
+}
+
+.a2 {
+	font-size: 16px;
+}
+
+.a2:hover {
+	font-size: 20px;
+}
+
+.a2:active {
+	font-size: 40px;
+}
+
+.a2:focus {
+}
+
+.a3:hover {
+	background: rgb(57, 255, 239);
+}
+
+.a3:active {
+	background: rgb(255, 57, 57);
+}
+
+.a3:focus {
+}
+
+.a4:hover {
+	border: 2px solid #77608d;
+}
+
+.a4:active {
+	border: 3px solid #77608d;
+}
+
+.a4:focus {
+}
+
+/* Отключает взаиможествие с курсором */
+
+.focus1:focus {
+	outline: 3px dashed #608d6b;
+}
+
+.focus2:focus {
+	outline: 3px dotted #608d6b;
+}
+
+.focus3:focus {
+	outline: 3px double #608d6b;
+}
+
+.focus4:focus {
+	outline: 5px ridge #608d6b;
+}
+/* pointer-events: none; */
+
+/* Псевдокласс target */
+.button {
+	min-width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid #77608d;
+	box-shadow: 3px 3px 5px 3px #77608d;
+	display: inline-block;
+	font-family: "Russo One", sans-serif;
+	font-size: 16px;
+	padding: 0 20px;
+}
+
+.button:hover {
+	margin: 2px 32px 0 0;
+	box-shadow: none;
+}
+
+.button:active {
+	margin: 2px 32px 0 0;
+	box-shadow: inset 0px 0px 5px 3px #77608d;
+}
+
+.button2 {
+	background: rgb(201, 240, 58);
+	margin-right: 30px;
+}
+
+.div-button {
+	height: 60px;
+}
+
+.box {
+	background: url(../img/cat.jpg) 0 0 no-repeat;
+	width: 300px;
+	height: 450px;
+	border: 1px solid #608d6b;
+}
+.box:target {
+	background: url(../img/cat.jpg) -300px 0 no-repeat;
+}
+
+/* first-child, last-child */
+.box-element {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: rgb(4, 138, 93);
+}
+
+.box-elements,
+.box-elements2,
+.box-elements3 {
+	margin-bottom: 30px;
+}
+
+.box-elements div:not(:last-child) {
+	margin: 0px 100px 0px 0px;
+}
+
+.box-elements2 div {
+	background: url("../img/happy.png") 0 0 / 50px no-repeat;
+	margin: 0px 100px 0px 0px;
+}
+
+.box-elements2 div:last-child {
+	margin: 0;
+	background: url("../img/sad.png") 0 0 / 50px no-repeat;
+}
+
+.box-elements2 div:first-child {
+	background: url("../img/emoji.png") 0 0 / 50px no-repeat;
+}
+/* 
+.box-elements3-a,
+.box-elements3-p {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: rgb(4, 138, 93);
+} */
+
+.box-elements3 *:last-child,
+.box-elements3 *:first-child {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: url("../img/thinking.png") 0 0 / 50px no-repeat;
+}
+
+/* :last-of-type; :first-of-type */
+.box-elements4-p {
+	display: inline-block;
+}
+
+.box-elements4 div:first-of-type,
+.box-elements4 div:last-of-type {
+	background: url("../img/smiling-face.png") 0 0 / 50px no-repeat;
+}
+
+/* :nth-child */
+
+.box-elements5 .box-element {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+}
+
+.box-elements5 div:nth-child(odd) {
+	background: #000;
+}
+
+.box-elements5 div:nth-child(even) {
+	background: rgb(240, 61, 61);
+}
+
+.box-elements6 div:nth-child(4n) {
+	background: url("../img/smiling-face.png") 0 0 / 50px no-repeat;
+}
+
+.box-elements7 div:nth-child(3n + 1) {
+	background: url("../img/smiling-face.png") 0 0 / 50px no-repeat;
+}
+
+.box-elements8 a,
+.box-elements8 p {
+	display: inline-block;
+}
+
+.box-elements8 div:nth-of-type(3) {
+	background: rgb(255, 143, 143);
+}
+
+.box-elements8 a:nth-of-type(4) {
+	background: rgb(255, 143, 143);
+}
+
+.box-elements8 p:nth-of-type(2) {
+	background: rgb(255, 143, 143);
+}
+
+/* Псевдоэлементы */
+.text2::first-letter {
+	font-size: 30px;
+	font-weight: 700;
+	color: rgb(255, 0, 0);
+}
+
+.text {
+	font-size: 16px;
+}
+
+.text::first-line {
+	color: rgb(2, 170, 161);
+}
+
+.text::before {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 16px;
+	background: url("../img/quotation-marks.png") 0 0 /20px no-repeat;
+}
+
+.text::after {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 20px;
+	background: url("../img/quotation-marks.png") -10px -5px /20px no-repeat;
+}
+
+.text2 {
+	margin-bottom: 30px;
+}
+
+.list li {
+	padding: 0 0 0 0px;
+	margin-left: 35px;
+}
+
+.list li::before {
+	content: "";
+	background: url("../img/check2.svg") 0 6px no-repeat;
+	width: 30px;
+	height: 25px;
+	display: inline-block;
+	/* border: 1px solid #000; */
+	margin-bottom: -5px;
+	margin-left: -35px;
+}
+
+.list li:hover {
+	text-decoration: underline;
+}
